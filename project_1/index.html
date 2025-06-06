@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess-My-Number</title>
+    <link rel="icon" type="image/x-icon" href="./src/fav_icon.png" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body class="bg-slate-800 text-white">
+    <div class="top mx-9 mt-6 flex justify-between">
+      <button class="border-2 p-1 px-6 font-bold cursor-pointer" id="again-btn">
+        Again
+      </button>
+      <span>Between 1 and 20</span>
+    </div>
+    <div class="mt-10">
+      <span class="block text-center text-4xl font-bold" id="title"
+        >Guess-My-Number!</span
+      >
+    </div>
+    <div class="split mt-10 flex justify-around items-center">
+      <div class="h-4 w-200 bg-red-600" id="right_line"></div>
+      <div
+        class="h-35 w-40 rounded-lg bg-red-600 pt-12 text-center text-4xl font-bold"
+        id="middle_box"
+      >
+        ?
+      </div>
+      <div class="h-4 w-200 bg-red-600" id="left_line"></div>
+    </div>
+    <div class="bottom flex justify-around ml-20">
+      <div class="leftSide flex flex-col gap-4 mt-40">
+        <input
+          class="h-15 w-35 border-2 text-4xl text-center font-bold"
+          type="number"
+          name="userNumber"
+          id="input_number"
+        />
+        <button
+          class="border-2 p-1 px-6 font-bold cursor-pointer"
+          id="check_btn"
+        >
+          Check!
+        </button>
+      </div>
+      <div class="h-100 w-4 bg-red-600" id="middle_line"></div>
+      <div class="h-100 w-4 bg-red-600" id="middle_line"></div>
+
+      <div class="rightSide mt-30">
+        <p class="text-3xl" id="output_text">Start Guessing...</p>
+        <p class="text-3xl mt-10" id="label-score">
+          Score: <span id="score">20</span>
+        </p>
+        <p class="text-3xl mt-4" id="label-highscore">
+          High Score: <span id="high_score">0</span>
+        </p>
+      </div>
+    </div>
+    <script src="guess_my_number.js"></script>
+  </body>
+</html>
